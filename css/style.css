@@ -1,0 +1,41 @@
+:root{
+    --font_tittle--:'Pacifico', cursive;
+}
+body {
+    background-color: #F7ECDE;
+}
+h1 {
+    font-family: var(--font_tittle--);
+    font-size: 4rem; 
+    position: relative; 
+}
+hr {
+    border-width: 2px ;
+    border-style: dashed;
+    border-color: black;
+}
+.icon span {
+  font-family: 'Righteous', sans-serif;
+  color: #6DA754;
+  font-size: 1.5rem;
+}
+.icon i {
+    color: #6DA754;
+}
+button {
+    width: 150px;
+    background-color: #D1512D;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+}
+#visit {
+    width: 75px;
+    background-color: #6DA754;
+    border-radius: 5px;
+}
+#delete {
+    width: 75px;
+    background-color: #D1512D;
+    border-radius: 5px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:ital,wght@0,300;1,300&family=Amatic+SC&family=Inter&family=Montserrat:wght@500;800&family=Open+Sans:wght@300;600;700&family=Pacifico&family=Poppins&family=Righteous&family=Roboto:wght@700&family=Source+Code+Pro:wght@600;700&family=Source+Sans+3&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:ital,wght@0,300;1,300&family=Amatic+SC&family=Inter&family=Montserrat:wght@500;800&family=Open+Sans:wght@300;600;700&family=Pacifico&family=Poppins&family=Roboto:wght@700&family=Source+Code+Pro:wght@600;700&family=Source+Sans+3&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h1 class="text-center mt-5">Bookmarker</h1>
+    <hr class="w-75 mx-auto mt-5" />
+    <div class="icon text-center">
+      <i class="fa-solid fa-bookmark">
+        <span> Bookmark your favorite sites </span>
+        <i class="fa-solid fa-bookmark"></i
+      ></i>
+    </div>
+    <div
+      class="site-name w-75 d-flex flex-column justify-content-center mx-auto mt-3"
+    >
+      <label for="bookmark" class="pb-2 fw-semibold">
+        <i class="fa-solid fa-book-bookmark pe-2"></i>
+        <span>site Name</span>
+      </label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name"
+        id="bookmarkName"
+      />
+    </div>
+    <div
+      class="site-url w-75 d-flex flex-column justify-content-center mx-auto mt-3"
+    >
+      <label for="bookmarkURL" class="pb-2 fw-semibold">
+        <i class="fa-solid fa-link pe-2"></i>
+        <span>site URL</span>
+      </label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="URL"
+        id="bookmarkURL"
+      />
+      <button class="mx-auto mt-4 p-2" onclick="bookmark()">Submit</button>
+    </div>
+    <hr class="w-75 mx-auto mt-5" />
+    <div class="w-75 mx-auto">
+      <table class="table">
+        <thead class="text-center">
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </thead>
+        <tbody class="text-center" id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
